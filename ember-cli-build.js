@@ -5,6 +5,13 @@ var EmberAddon = require('ember-cli/lib/broccoli/ember-addon');
 module.exports = function(defaults) {
   var app = new EmberAddon(defaults, {
     // Add options here
+
+    codemirror: {
+      modes: ['xml', 'javascript', 'css', 'handlebars', 'markdown', 'htmlmixed'],
+      keyMaps: ['vim', 'emacs', 'sublime'],
+      themes: ['solarized']
+    }
+
   });
 
   /*
